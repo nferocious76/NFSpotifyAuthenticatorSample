@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AA817F7251F82CE4B2AB7B9 /* Pods_NFSpotifyAuthenticatorSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9620BD7A6EB6C462520D423C /* Pods_NFSpotifyAuthenticatorSample.framework */; };
 		F5D7083D1DC4B8130057FBB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7083C1DC4B8130057FBB6 /* AppDelegate.swift */; };
 		F5D7083F1DC4B8130057FBB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7083E1DC4B8130057FBB6 /* ViewController.swift */; };
 		F5D708421DC4B8130057FBB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D708401DC4B8130057FBB6 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B0C0FD2E8C3A233AF38193C /* Pods-NFSpotifyAuthenticatorSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFSpotifyAuthenticatorSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-NFSpotifyAuthenticatorSample/Pods-NFSpotifyAuthenticatorSample.release.xcconfig"; sourceTree = "<group>"; };
+		9620BD7A6EB6C462520D423C /* Pods_NFSpotifyAuthenticatorSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFSpotifyAuthenticatorSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E026EB9FEAF9F56709D005 /* Pods-NFSpotifyAuthenticatorSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFSpotifyAuthenticatorSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NFSpotifyAuthenticatorSample/Pods-NFSpotifyAuthenticatorSample.debug.xcconfig"; sourceTree = "<group>"; };
 		F5D708391DC4B8130057FBB6 /* NFSpotifyAuthenticatorSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFSpotifyAuthenticatorSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D7083C1DC4B8130057FBB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5D7083E1DC4B8130057FBB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA817F7251F82CE4B2AB7B9 /* Pods_NFSpotifyAuthenticatorSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58D59B356F7FA35D19E5411B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2E026EB9FEAF9F56709D005 /* Pods-NFSpotifyAuthenticatorSample.debug.xcconfig */,
+				5B0C0FD2E8C3A233AF38193C /* Pods-NFSpotifyAuthenticatorSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		70990F747D1A8250D273D032 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9620BD7A6EB6C462520D423C /* Pods_NFSpotifyAuthenticatorSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5D708301DC4B8130057FBB6 = {
 			isa = PBXGroup;
 			children = (
 				F5D7083B1DC4B8130057FBB6 /* NFSpotifyAuthenticatorSample */,
 				F5D7083A1DC4B8130057FBB6 /* Products */,
+				58D59B356F7FA35D19E5411B /* Pods */,
+				70990F747D1A8250D273D032 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5D7084B1DC4B8130057FBB6 /* Build configuration list for PBXNativeTarget "NFSpotifyAuthenticatorSample" */;
 			buildPhases = (
+				4B9D491626F036DC663A15A7 /* [CP] Check Pods Manifest.lock */,
 				F5D708351DC4B8130057FBB6 /* Sources */,
 				F5D708361DC4B8130057FBB6 /* Frameworks */,
 				F5D708371DC4B8130057FBB6 /* Resources */,
+				B84035A33A42CF119157C707 /* [CP] Embed Pods Frameworks */,
+				1F995C410EFB452B91D28928 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F995C410EFB452B91D28928 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NFSpotifyAuthenticatorSample/Pods-NFSpotifyAuthenticatorSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B9D491626F036DC663A15A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B84035A33A42CF119157C707 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NFSpotifyAuthenticatorSample/Pods-NFSpotifyAuthenticatorSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5D708351DC4B8130057FBB6 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		F5D7084C1DC4B8130057FBB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2E026EB9FEAF9F56709D005 /* Pods-NFSpotifyAuthenticatorSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NFSpotifyAuthenticatorSample/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		F5D7084D1DC4B8130057FBB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B0C0FD2E8C3A233AF38193C /* Pods-NFSpotifyAuthenticatorSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NFSpotifyAuthenticatorSample/Info.plist;

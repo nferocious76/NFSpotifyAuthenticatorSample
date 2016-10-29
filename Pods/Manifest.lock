@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (4.0.1)
+  - NFSpotifyAuthenticator (0.1.1):
+    - Alamofire (~> 4.0.1)
+
+DEPENDENCIES:
+  - NFSpotifyAuthenticator
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  NFSpotifyAuthenticator: e5138ba0fe102b2e8e270bdae7e7b22439dd8714
+
+PODFILE CHECKSUM: 607d3185cc4282b41a352a5c9b0579c45a47945e
+
+COCOAPODS: 1.1.1

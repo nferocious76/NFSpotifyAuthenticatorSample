@@ -1,0 +1,6 @@
+framework module NFSpotifyAuthenticator {
+  umbrella header "NFSpotifyAuthenticator-umbrella.h"
+
+  export *
+  module * { export * }
+}
